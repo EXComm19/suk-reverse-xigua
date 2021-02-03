@@ -19,7 +19,7 @@ const minRandomFruitNum = reverseLevelUp ? 6 : 0; // 生成随机水果最小值
 const maxRandomFruitNum = reverseLevelUp ? 11 : 5; // 生成随机水果最大值（1-11）0 为葡萄，9 为半个西瓜
 let setFruits = {
   // 指定前几次生成的水果，可填入任意数量的数字，0 为葡萄，9 为半个西瓜
-  startFruits: reverseLevelUp ? [10, 10, 9, 8, 8, 7] : [0, 0, 1, 2, 2, 3],
+  startFruits: reverseLevelUp ? [10, 9, 9, 8, 8, 7] : [0, 0, 1, 2, 2, 3],
   randomFunction: () => {
     return minRandomFruitNum + Math.floor(Math.random() * (maxRandomFruitNum - minRandomFruitNum));
   }
@@ -38,7 +38,7 @@ let clickChangeFruit = false;
 let adLink = false;
 
 // 修改网页标题：将 "合成大西瓜" 进行替换
-document.getElementsByTagName("title")[0].innerText = '合成大西瓜';
+document.getElementsByTagName("title")[0].innerText = '合成小呆瓜';
 
 // 开启选分弹窗：将 false 改为 true
 let selectModal = false;
